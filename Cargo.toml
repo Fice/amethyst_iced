@@ -16,7 +16,7 @@ log = "0.4.8"
 glyph_brush = "0.6.0"
 
 [features]
-default = ["amethyst/empty"]
+default = []
 empty = ["amethyst/empty"]
 vulkan = ["amethyst/vulkan"]
 metal = ["amethyst/metal"]
