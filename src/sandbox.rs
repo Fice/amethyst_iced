@@ -8,7 +8,7 @@ pub type Element<'a, 'r, Message> = iced_native::Element<'a, Message, IcedRender
 /// This trait should be implemented by your UI State and defines
 /// how the UI reacts to messages.
 ///
-/// When receiving an UI message, the user can optionnaly send back a GameMessage
+/// When receiving an UI message, the user can optionally send back a GameMessage
 /// that their systems will listen to and react accordingly, allowing ECS interaction with the UI.
 //
 // Note: UIMessage & GameMessage have to be different types, otherwise the application will crash.
@@ -29,7 +29,7 @@ pub trait Sandbox: Send + Sync + 'static {
 
 #[derive(Default)]
 /// The SandboxContainer is the structure that will store the Sandbox in the
-/// ECS environement
+/// ECS environment
 pub struct SandboxContainer<S: Sandbox>(S);
 
 impl<S: Sandbox> SandboxContainer<S> {
