@@ -4,8 +4,7 @@ use amethyst::{
     prelude::*,
     renderer::{
         plugins::RenderToWindow,
-        //types::DefaultBackend,
-        rendy::util::vulkan::Backend,
+        types::DefaultBackend,
         ImageFormat,
         RenderingBundle,
         Texture,
@@ -26,7 +25,7 @@ fn main() -> Result<(), Error> {
 
     let game_data = GameDataBuilder::default()
         .with_bundle(
-            RenderingBundle::<Backend>::new()
+            RenderingBundle::<DefaultBackend>::new()
                 .with_plugin(RenderToWindow::from_config_path(display_config)?.with_clear([0.1,0.1,0.1,1.0]))
                 .with_plugin(IcedUI::default()),
         )?
