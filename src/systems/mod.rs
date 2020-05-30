@@ -7,3 +7,5 @@ pub(crate) use draw::*;
 pub(crate) use draw_glyphs::*;
 pub(crate) use interop::*;
 pub(crate) use load_fonts::*;
+
+pub use draw_glyphs::IcedDrawGlyphSystem;

@@ -1,13 +1,13 @@
 mod backend;
 mod bundle;
 mod custom_widget;
-mod pass;
+pub mod pass;
 mod pipelines;
 mod plugin;
 mod primitive;
 mod resources;
 pub mod sandbox;
-mod systems;
+pub mod systems;
 mod uniform;
 mod vertex;
 pub mod widget;
